@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":automergeAll",
+    ":automergeBranch",
+    ":maintainLockFilesWeekly"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["!/python/"],
+      "rangeStrategy": "pin"
+    }
   ]
 }
