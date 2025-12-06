@@ -1,19 +1,19 @@
-from flax import nnx
 import jax
 import jax.numpy as jnp
+from flax import nnx
 
 
 class Linear(nnx.Module):
-    def __init__(self, din: int, dout: int, *, rngs: nnx.Rngs):
+    def __init__(self, din: int, dout: int, *, rngs: nnx.Rngs) -> None:
         self.w = nnx.Param(rngs.params.uniform((din, dout)))
         self.b = nnx.Param(jnp.zeros((dout,)))
         self.din, self.dout = din, dout
 
-    def __call__(self, x: jax.Array):
+    def __call__(self, x: jax.Array) -> jax.Array:
         return x @ self.w + self.b[None]
 
 
-def main():
+def main() -> None:
     model = Linear(2, 5, rngs=nnx.Rngs(params=0))
     y = model(x=jnp.ones((1, 2)))
     print(y)
