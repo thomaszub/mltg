@@ -1,0 +1,9 @@
+[project]
+name = "eva"
+version = "0.1.0"
+description = "Exalted Virtual Agent"
+readme = "README.md"
+        requires-python = "==3.14.*"
+dependencies = [
+    "ruff==0.14.8",
+]
