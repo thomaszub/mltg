@@ -14,3 +14,7 @@ dependencies = [
 dev = [
     "ruff==0.14.8",
 ]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["COM812", "D", "T20"]

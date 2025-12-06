@@ -26,3 +26,6 @@ jobs:
 
       - name: Setup environment
         run: uv sync
+
+      - name: Check
+        run: uv run ruff check
