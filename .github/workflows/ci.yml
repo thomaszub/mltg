@@ -12,6 +12,9 @@ on:
 
   workflow_dispatch:
 
+env:
+  PYTHONPATH: eva
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -29,3 +32,6 @@ jobs:
 
       - name: Check
         run: uv run ruff check
+
+      - name: Test
+        run: uv run pytest
