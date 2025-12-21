@@ -4,7 +4,8 @@
     "config:recommended",
     ":automergeAll",
     ":automergeBranch",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":semanticCommitTypeAll(chore)"
   ],
   "packageRules": [
     {
