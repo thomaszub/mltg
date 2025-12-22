@@ -5,16 +5,16 @@ description = "Exalted Virtual Agent"
 readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
-    "flax==0.12.2",
-    "jax[cpu]==0.8.2",
-    "optax==0.2.6",
+    "flax==0.12.7",
+    "jax[cpu]==0.10.0",
+    "optax==0.2.8",
 ]
 
 [dependency-groups]
 dev = [
-    "jupyterlab==4.5.1",
-    "pytest==9.0.2",
-    "ruff==0.14.10",
+    "jupyterlab==4.5.6",
+    "pytest==9.0.3",
+    "ruff==0.15.9",
 ]
 
 [tool.ruff.lint]
