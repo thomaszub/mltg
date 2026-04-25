@@ -5,7 +5,7 @@ description = "Exalted Virtual Agent"
 readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
-    "flax==0.12.6",
+    "flax==0.12.7",
     "jax[cpu]==0.9.2",
     "optax==0.2.8",
 ]
