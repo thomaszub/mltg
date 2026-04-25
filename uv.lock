@@ -286,6 +286,7 @@ dependencies = [
     { name = "flax" },
     { name = "jax" },
     { name = "optax" },
+    { name = "scipy" },
 ]
 
 [package.dev-dependencies]
@@ -300,6 +301,7 @@ requires-dist = [
     { name = "flax", specifier = "==0.12.7" },
     { name = "jax", extras = ["cpu"], specifier = "==0.10.0" },
     { name = "optax", specifier = "==0.2.8" },
+    { name = "scipy", specifier = "==1.17.1" },
 ]
 
 [package.metadata.requires-dev]

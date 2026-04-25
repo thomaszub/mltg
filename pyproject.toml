@@ -8,6 +8,7 @@ dependencies = [
     "flax==0.12.7",
     "jax[cpu]==0.10.0",
     "optax==0.2.8",
+    "scipy==1.17.1",
 ]
 
 [dependency-groups]
