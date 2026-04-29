@@ -26,6 +26,13 @@ Machine Learning Testground (MLTG) - A Python-based virtual agent project using 
 - Run type checking: `pyright` (if configured)
 - Fix any test or lint errors before committing
 
+## Commit Guidelines
+
+- Follow [Conventional Commits](https://www.conventionalcommits.org/) format
+- Common types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- Use imperative mood (e.g., "Add feature" not "Added feature")
+- Keep commit messages concise and descriptive
+
 ## Development Environment
 
 - Uses uv for dependency management
