@@ -11,3 +11,6 @@ wheels/
 
 # IntelliJ
 .idea
+
+# eva
+/notebooks/data/

@@ -17,6 +17,7 @@ dev = [
     "matplotlib==3.10.9",
     "pytest==9.0.3",
     "ruff==0.15.12",
+    "torchvision==0.26.0",
 ]
 
 [tool.ruff.lint]
