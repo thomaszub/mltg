@@ -20,6 +20,9 @@ dev = [
     "torchvision==0.27.0",
 ]
 
+[tool.ruff]
+line-length = 120
+
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = ["COM812", "D", "PLR2004", "S101", "T20"]
