@@ -15,7 +15,7 @@ dependencies = [
 dev = [
     "jupyterlab==4.5.8",
     "matplotlib==3.11.0",
-    "pytest==9.0.3",
+    "pytest==9.1.0",
     "ruff==0.15.17",
     "torchvision==0.27.0",
 ]
