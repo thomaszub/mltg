@@ -21,9 +21,7 @@ def dataloader(
         end = min(dataset_size, end + batch_size)
 
 
-def sample(
-    arrays: tuple[jax.Array, jax.Array], batch_size: int, rngs: nnx.Rngs
-) -> tuple[jax.Array, jax.Array]:
+def sample(arrays: tuple[jax.Array, jax.Array], batch_size: int, rngs: nnx.Rngs) -> tuple[jax.Array, jax.Array]:
     dataset_size = arrays[0].shape[0]
     assert all(array.shape[0] == dataset_size for array in arrays)
     indices = jnp.arange(dataset_size)

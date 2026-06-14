@@ -10,9 +10,10 @@ class WrongFirstAxisSizeError(ValueError):
 
 
 class WrongShapeError(ValueError):
-    def __init__(self, shape1: tuple[int, ...], shape2:tuple[int, ...]) -> None:
+    def __init__(self, shape1: tuple[int, ...], shape2: tuple[int, ...]) -> None:
         msg = f"Input shapes (shape={shape1}) and (shape={shape2}) must be equal"
         super().__init__(msg)
+
 
 @jax.jit
 def calc_cross_correlation(z1: jax.Array, z2: jax.Array) -> jax.Array:
@@ -38,8 +39,9 @@ def calc_cross_correlation(z1: jax.Array, z2: jax.Array) -> jax.Array:
     z2norm = (z2 - jnp.mean(z2, axis=0)) / jnp.std(z1, axis=0, ddof=1)
     return jnp.einsum("bi,bj->ij", z1norm, z2norm) / size
 
+
 @jax.jit(static_argnames="lambda_param")
-def barlow_twins_loss(z1: jax.Array, z2: jax.Array, lambda_param: float=0.005) -> Array:
+def barlow_twins_loss(z1: jax.Array, z2: jax.Array, lambda_param: float = 0.005) -> Array:
     """
     Computes the Barlow Twins loss for self-supervised learning.
 
@@ -72,7 +74,7 @@ def barlow_twins_loss(z1: jax.Array, z2: jax.Array, lambda_param: float=0.005) -
     c = calc_cross_correlation(z1, z2)
 
     # Invariant term: sum of diagonal elements (maximize)
-    invariant_term = jnp.sum((1.0 - jnp.diag(c))**2)
+    invariant_term = jnp.sum((1.0 - jnp.diag(c)) ** 2)
 
     # Redundancy reduction term: sum of off-diagonal elements squared (minimize)
     off_diag = jnp.fill_diagonal(c, jnp.array([[0]]), inplace=False)

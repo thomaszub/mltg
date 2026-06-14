@@ -51,13 +51,11 @@ def test_calc_cross_correlating() -> None:
     cc = calc_cross_correlation(z1, z2)
 
     assert cc.shape == (2, 2)
-    assert jnp.isclose(
-        cc,
-        jnp.array([[-2.0 / 3.0, -2.0 / 3.0], [-2.0 / 3.0, -2.0 / 3.0]]), atol=1e-5
-    ).all()
+    assert jnp.isclose(cc, jnp.array([[-2.0 / 3.0, -2.0 / 3.0], [-2.0 / 3.0, -2.0 / 3.0]]), atol=1e-5).all()
 
 
 # Error test cases
+
 
 def test_barlow_twins_loss_shape_mismatch() -> None:
     z1 = jnp.array([[1.0, 2.0], [3.0, 4.0]])

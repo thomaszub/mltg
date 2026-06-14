@@ -6,9 +6,7 @@ from jax.tree_util import GetAttrKey
 
 
 class Mutator(Callable[[tuple[type[GetAttrKey], ...], nnx.Param], nnx.Param]):
-    def __call__(
-        self, path: tuple[type[GetAttrKey], ...], param: nnx.Param
-    ) -> nnx.Param:
+    def __call__(self, path: tuple[type[GetAttrKey], ...], param: nnx.Param) -> nnx.Param:
         pass
 
 
@@ -18,12 +16,8 @@ class GaussianMutator(Mutator):
         self.mu = mu
         self.sigma = sigma
 
-    def __call__(
-        self, _: tuple[type[GetAttrKey], ...], param: nnx.Param
-    ) -> nnx.Param:
-        return param + nnx.Param(
-            self.mu + self.sigma * self.rngs.mutation.normal(param.shape)
-        )
+    def __call__(self, _: tuple[type[GetAttrKey], ...], param: nnx.Param) -> nnx.Param:
+        return param + nnx.Param(self.mu + self.sigma * self.rngs.mutation.normal(param.shape))
 
 
 def apply_mutation(model: nnx.Pytree, mutator: Mutator) -> nnx.Pytree:
