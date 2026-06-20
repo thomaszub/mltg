@@ -14,3 +14,4 @@ wheels/
 
 # eva
 /notebooks/data/
+/**/*.orbax
