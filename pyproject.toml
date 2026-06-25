@@ -19,7 +19,7 @@ dev = [
     "jupyterlab==4.6.0",
     "matplotlib==3.11.0",
     "pytest==9.1.1",
-    "ruff==0.15.19",
+    "ruff==0.15.20",
     "torchvision==0.27.1",
 ]
 
