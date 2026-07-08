@@ -20,7 +20,7 @@ dev = [
     "matplotlib==3.11.0",
     "pytest==9.1.1",
     "ruff==0.15.20",
-    "torchvision==0.27.1",
+    "torchvision==0.28.0",
 ]
 
 [tool.ruff]
