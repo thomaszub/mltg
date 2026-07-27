@@ -19,7 +19,7 @@ dev = [
     "jupyterlab==4.6.2",
     "matplotlib==3.11.1",
     "pytest==9.1.1",
-    "ruff==0.15.22",
+    "ruff==0.16.0",
     "torchvision==0.28.0",
 ]
 
@@ -28,4 +28,4 @@ line-length = 120
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["COM812", "D", "PLR2004", "S101", "T20"]
+ignore = ["COM812", "CPY001", "D", "PLR2004", "S101", "T20"]

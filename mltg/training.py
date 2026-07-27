@@ -43,7 +43,7 @@ def get_eval_step(
     return eval_step
 
 
-def train(# noqa: PLR0913
+def train(# noqa: PLR0913, PLR0917
         model: nnx.Module,
         optimizer: nnx.Optimizer,
         loss_fn: MetricFn,
