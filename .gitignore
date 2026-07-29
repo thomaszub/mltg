@@ -12,6 +12,7 @@ wheels/
 # IntelliJ
 .idea
 
-# eva
+# Custom
 /notebooks/data/
 /**/*.orbax
+/**/__marimo__
