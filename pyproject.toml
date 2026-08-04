@@ -10,7 +10,7 @@ dependencies = [
     "jax[cpu]==0.11.0",
     "marimo==0.23.16",
     "optax==0.2.8",
-    "orbax-checkpoint==0.12.1",
+    "orbax-checkpoint==0.12.2",
     "pydantic-ai-slim[mistral,openai]==2.22.0",
     "scipy==1.18.0",
     "tiktoken==0.13.0",
