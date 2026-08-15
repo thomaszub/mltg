@@ -11,7 +11,7 @@ dependencies = [
     "marimo==0.23.16",
     "optax==0.2.8",
     "orbax-checkpoint==0.12.4",
-    "pydantic-ai-slim[mistral,openai]==2.30.0",
+    "pydantic-ai-slim[mistral,openai]==2.31.0",
     "scipy==1.18.0",
     "tiktoken==0.13.0",
 ]
