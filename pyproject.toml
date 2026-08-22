@@ -12,7 +12,7 @@ dependencies = [
     "optax==0.2.8",
     "orbax-checkpoint==0.12.4",
     "pydantic-ai-slim[mistral,openai]==2.33.0",
-    "scipy==1.18.0",
+    "scipy==1.18.1",
     "tiktoken==0.14.0",
 ]
 
