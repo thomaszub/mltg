@@ -5,7 +5,7 @@ description = "Machine Learning Testground"
 readme = "README.md"
 requires-python = "==3.13.*"
 dependencies = [
-    "flax==0.12.8",
+    "flax==0.12.9",
     "grain==0.2.18",
     "jax[cpu]==0.11.0",
     "marimo==0.24.0",
