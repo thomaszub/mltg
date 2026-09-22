@@ -1341,7 +1341,7 @@ requires-dist = [
     { name = "jax", extras = ["cpu"], specifier = "==0.11.0" },
     { name = "marimo", specifier = "==0.24.2" },
     { name = "optax", specifier = "==0.2.8" },
-    { name = "orbax-checkpoint", specifier = "==0.12.4" },
+    { name = "orbax-checkpoint", specifier = "==0.12.5" },
     { name = "pydantic-ai-slim", extras = ["mistral", "openai"], specifier = "==2.46.0" },
     { name = "scipy", specifier = "==1.18.1" },
     { name = "tiktoken", specifier = "==0.14.0" },
@@ -1742,7 +1742,7 @@ wheels = [
 
 [[package]]
 name = "orbax-checkpoint"
-version = "0.12.4"
+version = "0.12.5"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "absl-py" },
@@ -1762,9 +1762,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "uvloop", marker = "sys_platform != 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d6/b2/7f709a61337465826c7d2acdb98285fa6270e90ba59b76a1f42bcb18bfe2/orbax_checkpoint-0.12.4.tar.gz", hash = "sha256:5e6e14b6ca4a7979e04e6769afa0a39dd535bb4b9bf9af64bdf5b55ca44eb795", size = 749838, upload-time = "2026-08-12T21:05:15.856Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/dd/e3/6c49ca1786e55459a6e3738e8425d9604ec4b87fa84b881d9c86454cd941/orbax_checkpoint-0.12.5.tar.gz", hash = "sha256:337b803370f62d23dc85d174fa9fb59115f9f5b43b5473b23318e118fd0c6114", size = 757187, upload-time = "2026-09-21T21:29:10.981Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/0c/30/19cebe8b381179ccd45faab303f4279c3aaa3a707387c42fbbb43ca778ac/orbax_checkpoint-0.12.4-py3-none-any.whl", hash = "sha256:f16d87e2c86d69480cdd2af21e53d2928fbeea0e432e35cb31600d547e035ecd", size = 1370245, upload-time = "2026-08-12T21:05:14.142Z" },
+    { url = "https://files.pythonhosted.org/packages/3a/cc/7b5b26d16c818919db8c8af9e3d01f731e68b1452447f7f4544abe30ab2f/orbax_checkpoint-0.12.5-py3-none-any.whl", hash = "sha256:2fa697de73f75c6dd5f94ca84b1a87deefc101a531e60a04bf7574a23c922d03", size = 1382573, upload-time = "2026-09-21T21:29:09.59Z" },
 ]
 
 [[package]]
